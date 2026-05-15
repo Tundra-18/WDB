@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Picture Element Demo</title>
+</head>
+<body>
+
+    <h1>The HTML &lt;picture&gt; Element</h1>
+
+    <h3>1. Responsive Images by Screen Size</h3>
+    <p>Resize the browser window to see the image change:</p>
+    
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800">
+        
+        <source media="(min-width: 465px)" srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500">
+        
+        <img src="https://images.unsplash.com/photo-1434725039720-bbdb6cd5538a?w=300" alt="Nature View">
+    </picture>
+
+    <hr>
+
+    <h3>2. Different Image Formats Support</h3>
+    <p>The browser will pick the first format it supports:</p>
+
+    <picture>
+        <source srcset="img_avatar.webp" type="image/webp">
+        
+        <source srcset="img_avatar.png" type="image/png">
+        
+        <img src="img_avatar.jpg" alt="User Avatar" style="width:150px;">
+    </picture>
+
+    <p><i>Note: Browsers read from top to bottom and stop at the first match.</i></p>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Images Tutorial</title>
+    <style>
+        
+        .right-img {
+            float: right;
+            margin-left: 15px;
+            border: 1px solid #ccc;
+        }
+        
+        .left-img {
+            float: left;
+            margin-right: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Images Usage Examples</h1>
+
+    <h3>1. Basic Image Implementation</h3>
+    <img src="https://www.w3schools.com/html/img_chania.jpg" 
+         alt="Chania City View" 
+         width="460" height="345">
+
+    <p><i>(An image with src, alt, and specific dimensions defined)</i></p>
+
+    <hr>
+
+    <h3>2. Using CSS Float (Right)</h3>
+    <img src="https://www.w3schools.com/html/smiley.gif" 
+         alt="Smiley face" 
+         width="42" height="42" 
+         class="right-img">
+
+    <p>
+        This image is aligned to the right, and the text wraps around it on the left. 
+        The float property is very useful for creating professional website layouts
+        where images and text coexist harmoniously.
+    </p>
+
+    <hr>
+
+    <h3>3. Image Link (Click the image to naviga te)</h3>
+
+    <p>Click the Logo below to go to Google:</p>
+
+    <a href="https://www.google.com" target="_blank">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+             alt="Google Logo"
+             style="width:150px; border:none;">
+    </a>
+
+    <hr>
+
+    <h3>4. Alt Text (Displayed when the file path is incorrect)</h3>
+    <img src="images/flower.jpg" alt="A beautiful flower should be displayed here">
+
+</body>
+
+</html>

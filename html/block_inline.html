@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplest Block vs Inline</title>
+    <style>
+        /* Block = Blue (Full width) */
+        div, p { background: lightblue; padding: 10px; margin: 10px 0; }
+        
+        /* Inline = Yellow (Content width) */
+        span, a { background: yellow; }
+    </style>
+</head>
+<body>
+    <div>Block Element (Div)</div>
+    <p>
+        Block (P) with <span>Inline (Span)</span> inside.
+    </p>
+    <a href="#">Inline Link 1</a>
+    <a href="#">Inline Link 2</a>
+</body>
+</html>
