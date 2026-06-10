@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Form Widgets</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select, input[type="date"], textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Complete Registration Form</h2>
+    
+    <form>
+
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="John">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Doe">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male" style="display:inline; font-weight:normal;">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female" style="display:inline; font-weight:normal;">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label>Interests / Hobbies:</label>
+            <input type="checkbox" id="coding" name="hobby" value="Coding">
+            <label for="coding" style="display:inline; font-weight:normal;">Coding</label><br>
+            <input type="checkbox" id="music" name="hobby" value="Music">
+            <label for="music" style="display:inline; font-weight:normal;">Music</label><br>
+            <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+            <label for="gaming" style="display:inline; font-weight:normal;">Gaming</label>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country of Residence:</label>
+            <select id="country" name="country">
+                <option value="myanmar">Myanmar</option>
+                <option value="thailand">Thailand</option>
+                <option value="singapore">Singapore</option>
+                <option value="japan">Japan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="date_of_birth">
+        </div>
+
+        <div class="form-group">
+            <label for="skill_level">Skill Level (0 to 100):</label>
+            <input type="range" id="skill_level" name="skill_level" min="0" max="100" value="50">
+        </div>
+
+        <div class="form-group">
+            <label for="bio">Short Biography:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+        </div>
+
+        <input type="submit" value="Submit Registration">
+
+    </form>
+
+</body>
+</html>

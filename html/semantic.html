@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Header, Footer and Aside Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav {
+            background-color: red;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .main-container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            background-color: pink;
+            min-height: 400px;
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+        }
+        article {
+            background-color: aquamarine;
+            padding: 15px;
+        }
+        aside {
+            flex: 1;
+            background-color: #deecf8;
+            padding: 20px;
+            border-left: 5px solid #35424a;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Your source for web development tutorials</p>
+        <nav>
+            <a href="html/index.html">Home</a> | 
+            <a href="#">About</a> | 
+            <a href="#">Services</a> | 
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <main>
+            <article>
+                <h2>Understanding HTML Semantic Elements</h2>
+                <p>Published on: June 8, 2026</p>
+                <p>Semantic elements like header and footer make the HTML structure easier to read 
+                    for both developers and search engines (SEO).</p>
+            </article>
+        </main>
+
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML Tutorials</a></li>
+                <li><a href="#">CSS Guides</a></li>
+                <li><a href="#">Web Design Tips</a></li>
+            </ul>
+            <h3>About Author</h3>
+            <p>This tutorial is created to help beginners understand HTML5 structures easily.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Web Development Blog. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:info@example.com" style="color: #4da6ff;">info@example.com</a></p>
+    </footer>
+
+</body>
+</html>

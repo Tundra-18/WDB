@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Float Layout Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header{
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left{
+            float: left;
+            width: 20%;
+            background: #f1f1f1;
+            padding: 20px;
+            height: 300px;
+        }
+
+        .content{
+            float: left;
+            width: 60%;
+            background: #ffffff;
+            padding: 20px;
+            height: 300px;
+        }
+
+        .right{
+            float: left;
+            width: 20%;
+            background: #f1f1f1;
+            padding: 20px;
+            height: 300px;
+        }
+
+        .footer{
+            clear: both;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Float Layout</h1>
+    </div>
+
+    <div class="left">
+        <h3>Left Sidebar</h3>
+        <p>Menu items here</p>
+    </div>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>
+            This section contains the main content of the webpage.
+            Float is used to place columns side by side.
+        </p>
+    </div>
+
+    <div class="right">
+        <h3>Right Sidebar</h3>
+        <p>Ads or extra info</p>
+    </div>
+
+    <div class="footer">
+        <p>Footer Section</p>
+    </div>
+
+</body>
+</html>
