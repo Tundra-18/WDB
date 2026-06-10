@@ -3,6 +3,7 @@
 # =========================
 .vscode/
 .history/
+.idea
 
 # =========================
 # Node.js (if used later)
