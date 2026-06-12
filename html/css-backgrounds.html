@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background & Opacity Example</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .normal-box {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .opacity-box {
+            background-color: green;
+            opacity: 0.3;
+            color: white; /* ဤစာလုံးသည် opacity ကြောင့် ဖတ်ရခက်သွားမည် */
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .rgba-box {
+            background: rgba(0, 128, 0, 0.3);
+            color: black; /* စာသားသည် ပုံမှန်အတိုင်း ထင်ရှားနေမည် */
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Background & Transparency Comparison</h2>
+
+    <div class="normal-box">
+        <strong>Normal Box:</strong> Background is solid green. Text is fully visible.
+    </div>
+
+    <div class="opacity-box">
+        <strong>Opacity Box (0.3):</strong> Everything inside this box becomes transparent.
+    </div>
+
+    <div class="rgba-box">
+        <strong>RGBA Box (0.3 Alpha):</strong> 
+        Only the green background is transparent. 
+        This text stays 100% solid and easy to read.
+    </div>
+
+</body>
+</html>

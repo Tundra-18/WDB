@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All HTML Form Elements</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            padding: 20px; 
+            background-color: #f9f9f9; 
+        }
+        .form-group { 
+            margin-bottom: 20px; 
+        }
+        label { 
+            font-weight: bold; 
+            display: block; 
+            margin-bottom: 5px; 
+        }
+        input[type="text"], select, textarea, input[list] { 
+            width: 100%; 
+            padding: 8px; 
+            box-sizing: border-box; 
+        }
+        input[type="submit"] {
+            background: #2ecc71; 
+            color: white; 
+            padding: 10px; 
+            border: none; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Complete HTML Form Elements Gallery</h2>
+    
+    <form action="/action_page.php" method="POST" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+        <fieldset class="form-group">
+            <legend>Personalia (Group Info):</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John">
+        </fieldset>
+
+        <div class="form-group">
+            <label for="cars">Choose a Car (Pre-selected Fiat):</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="multi-cars">Choose Multiple Cars (Hold Ctrl):</label>
+            <select id="multi-cars" name="multicars" size="3" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="msg">Message (Rows=4, Cols=30):</label>
+            <textarea id="msg" name="message" rows="4" cols="30">The cat was playing in the garden.</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="browser-choice">Your Web Browser (Type to Search):</label>
+            <input id="browser-choice" name="browser" list="browsers">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label>Live Calculation Output:</label>
+            0 <input type="range" id="a" name="a" value="50" min="0" max="100"> 100
+            +
+            <input type="number" id="b" name="b" value="50" style="width: 60px;">
+            =
+            <output name="x" for="a b" style="font-weight: bold; color: red;">100</output>
+        </div>
+
+        <div class="form-group">
+            <button type="button" onclick="alert('Hello World!')">Click Me (Alert)!</button>
+        </div>
+
+        <input type="submit" value="Submit All Data">
+    </form>
+</body>
+</html>
