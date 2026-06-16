@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Attachment and Shorthand Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/css-background-att-short.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Background Shorthand & Attachment</h2>
+
+        <p>
+            Instead of writing multiple CSS properties separately, we can use the
+            <strong>background shorthand</strong> 
+            property to define the background color,
+            image, repeat behavior, attachment, position, and size in a single line:
+        </p>
+        <pre>
+            <code>background: #f4f4f4 url("img_tree.png") 
+                no-repeat fixed right top / cover;
+            </code>
+        </pre>
+        <p>
+            In this example, the background attachment is set to
+            <code>fixed</code>, which means the background image remains in the same
+            position on the screen while the page content scrolls. Try scrolling down
+            the page—you will notice that the text moves, but the background image
+            stays pinned to the top-right corner of the browser window.
+        </p>
+        <div class="spacer">
+            <h3>Scroll down here to see the "fixed" effect!</h3>
+            <p>Notice how the background image stays exactly where 
+                it is while you scroll through this long section.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.solid-border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkblue;
+}
+
+/* Shorthand */
+.dashed-round-border {
+    border: 3px dashed #ff5722;
+    border-radius: 12px;
+}
+.bottom-border-only {
+    border-bottom: 4px solid #4caf50;
+}
+

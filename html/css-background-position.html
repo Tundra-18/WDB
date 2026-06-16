@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Repeat and Position Example</title>
+    <style>
+        body {
+            background-image: url("/images/banana.jpg");
+            background-repeat: no-repeat;
+            /* background-repeat: x; */
+            /* background-repeat: y;  */
+            background-position: center;
+            /* background-position: top right;  */
+            /* background-size: cover;  */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            max-width: 900px;  
+            width: 100%;        
+            padding: 40px;     
+            box-shadow: 5px 4px 40px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>CSS Background Properties</h1> 
+        <h2>1. Background Repeat</h2>
+        <p>The 
+            <code>background-repeat</code> 
+            property sets if/how a background image will be repeated.
+        </p>
+        <ul>
+            <li><code>repeat-x</code>: Repeats the image horizontally.</li>
+            <li><code>repeat-y</code>: Repeats the image vertically.</li>
+            <li><code>no-repeat</code>: Shows the background image only once.</li>
+        </ul>
+        <h2>2. Background Position</h2>
+        <p>
+            The <code>background-position</code> 
+            property is used to set the starting position of the background image.
+        </p>
+        <p>
+            In this example, the image is positioned at the 
+            <code>center</code> 
+            and the main card container is centered perfectly on the screen.
+        </p>
+    </div>
+</body>
+</html>

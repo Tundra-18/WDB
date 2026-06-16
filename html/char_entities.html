@@ -14,7 +14,7 @@
             font-size: 24px; 
         }
         header {
-            background: linear-gradient(135deg, #0284c7, #0369a1);
+            background: linear-gradient(100deg, #0284c7, red);
             color: white;
             padding: 50px 20px;
             text-align: center;
@@ -44,14 +44,6 @@
         li {
             margin-bottom: 15px;
         }
-        code {
-            background: #f1f5f9;
-            color: #e11d48;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
         .space-demo {
             background: #fdf2f8;
             padding: 15px;
@@ -80,9 +72,8 @@
     <main>
         <h2>1. HTML Tags &amp; Quotes</h2>
         <ul>
-            <li>To display a bold tag, use: <code>&lt;b&gt;</code></li>
-            <li>To display a heading 1 tag, use: <code>&lt;h1&gt;</code></li>
-            <li>Quotations: <code>&quot;</code>Hello World<code>&quot;</code></li>
+            <li>A is &lt; B. And C is &gt; D</li>
+            <li>Quotations:&quot;Hello World&quot;</li>
             <li>Ampersand sign: AT&amp;T</li>
         </ul>
         <h2>2. Global Currencies</h2>
@@ -100,8 +91,8 @@
         </ul>
         <h2>4. Mathematics &amp; Directions</h2>
         <ul>
-            <li>Greater than: 10 <code>&gt;</code> 5</li>
-            <li>Less than: 3 <code>&lt;</code> 7</li>
+            <li>Greater than: 10 &gt; 5</li>
+            <li>Less than: 3 &lt; 7</li>
             <li>Multiplication &amp; Division: 10 <b>&times;</b> 2 <b>&divide;</b> 4</li>
             <li>Degree Symbol: 37<b>&deg;</b>C</li>
             <li>Left Arrow: <b>&larr;</b> Back</li>
@@ -110,8 +101,7 @@
         <h2>5. Non-breaking Spaces</h2>
         <div class="space-demo">
             <p>Normal Space: Text1 Text2</p>
-            <p>Forced Spaces: Text1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Text2 (Using <code>&amp;nbsp;</code>)</p>
+            <p>Forced Spaces: Text1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text2
         </div>
     </main>
 
