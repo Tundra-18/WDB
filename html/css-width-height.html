@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Height and Width All-in-One Example</title>
+    <link rel="stylesheet" href="/css/css-width-height.css">
+</head>
+<body>
+
+    <h2 style="text-align:center;">CSS Height and Width Examples</h2>
+
+    <div class="parent-container">
+        <h3>1. Length (Fixed) vs Percentage (%)</h3>
+        
+        <div class="box box-fixed">
+            Fixed Dimensions (width: 300px; height: 150px;)
+        </div>
+
+        <br>
+
+        <div class="box box-percentage">
+            Percentage Dimensions (width: 50%; height: 100px;) <br>
+            Takes 50% width of its parent container.
+        </div>
+    </div>
+
+    <div class="parent-container">
+        <h3>2. Min/Max Dimensions</h3>
+        
+        <div class="box box-min-max">
+            min-width: 200px; max-width: 500px; <br>
+            min-height: 100px; max-height: 200px; <br>
+            This box will scale with content but stay within these limits.
+        </div>
+    </div>
+
+    <div class="parent-container">
+        <h3>3. Width vs Max-Width (Try resizing your browser window)</h3>
+        
+        <p><strong>Problem: Fixed width (600px)</strong> - Will overflow on small screens causing horizontal scroll.</p>
+        <div class="box box-width-fixed">
+            width: 600px;
+        </div>
+
+        <br>
+
+        <p><strong>Solution: Responsive max-width (600px)</strong> - Will automatically shrink on small screens.</p>
+        <div class="box box-max-width-responsive">
+            max-width: 600px;
+        </div>
+    </div>
+
+    <div class="parent-container">
+        <h3>4. Best Practice Responsive Container</h3>
+        <div class="responsive-container">
+            width: 100%; max-width: 900px; <br>
+            Full width on mobile screens, caps at 900px on desktop screens.
+        </div>
+    </div>
+</body>
+</html>

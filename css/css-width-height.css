@@ -1,0 +1,62 @@
+/* Parent Wrapper for Structure */
+.parent-container {
+    width: 80%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Default Box Styling */
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* 1. Fixed Length vs Percentage */
+.box-fixed {
+    width: 300px;
+    height: 150px;
+    background-color: #2196F3;
+}
+
+.box-percentage {
+    width: 50%;
+    height: 100px;
+    background-color: #9C27B0;
+}
+
+/* 2. Min/Max Dimensions */
+.box-min-max {
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 100px;
+    max-height: 200px;
+    background-color: #FF9800;
+}
+
+/* 3. Width vs Max-Width */
+.box-width-fixed {
+    width: 600px;
+    background-color: #E91E63;
+}
+
+.box-max-width-responsive {
+    max-width: 600px;
+    background-color: #009688;
+}
+
+/* 4. Best Practice Container */
+.responsive-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: powderblue;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}

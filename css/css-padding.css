@@ -1,0 +1,46 @@
+/* Container Styling */
+.container {
+    width: 80%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Default Box Styling */
+.box {
+    background-color: #4CAF50;
+    color: white;
+    border: 5px solid #333; /* Visual border to see padding inside */
+}
+
+/* 1. Individual Sides */
+.box-individual {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    background-color: #2196F3;
+}
+
+/* 2. Shorthand Property */
+.box-shorthand {
+    padding: 25px 50px 75px 100px;
+    background-color: #9C27B0;
+}
+
+/* 3. Box Sizing Comparison */
+.box-content {
+    width: 300px;
+    padding: 25px;
+    box-sizing: content-box; /* Default browser behavior */
+    background-color: #E91E63;
+}
+
+.box-border {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box; 
+    background-color: #FF9800;
+}

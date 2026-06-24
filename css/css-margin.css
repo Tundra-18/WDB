@@ -1,0 +1,46 @@
+/* Container Styling */
+.container {
+    width: 80%;
+    background-color: #f0f0f0;
+    border: 2px dashed #999;
+    padding: 20px;
+    margin: 20px auto; /* Centers the container on the page */
+}
+
+/* Default Box Styling */
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* 1. Individual Sides */
+.box-individual {
+    margin-top: 40px;     /* Top side space */
+    margin-right: 20px;   /* Right side space */
+    margin-bottom: 10px;  /* Bottom side space */
+    margin-left: 50px;    /* Left side space */
+    background-color: #2196F3;
+}
+
+/* 2. Shorthand Property */
+/* Syntax: margin: top right bottom left; (Clockwise) */
+.box-shorthand {
+    margin: 30px 15px 40px 60px;
+    background-color: #9C27B0;
+}
+
+/* 3. Margin Auto */
+.box-auto {
+    width: 50%; /* Width is required for auto margin to work horizontally */
+    margin: 0 auto; 
+    background-color: #FF9800;
+}
+
+/* 4. Negative Margin */
+.box-negative {
+    margin-top: -20px; /* Pulls the element upwards, overlapping the previous element */
+    background-color: #E91E63;
+}

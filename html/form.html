@@ -6,17 +6,34 @@
     <title>Simple HTML Form Widgets</title>
     <style>
         body {
-            background-color: lightblue; /* နောက်ခံအရောင်ကို အပြာနုရောင် ထားမည် */
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: antiquewhite;
         }
 
-        h1 {
-            color: white;             /* စာလုံးအရောင်ကို အဖြူရောင် ထားမည် */
-            text-align: center;       /* စာသားကို အလယ်ဗဟိုတွင် ထားမည် */
+        .form-group {
+            margin-bottom: 15px;
         }
 
-        p {
-            font-family: verdana;     /* စာလုံးပုံစံ (Font) ကို Verdana သုံးမည် */
-            font-size: 20px;          /* စာလုံးအရွယ်အစားကို 20px ထားမည် */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], select, input[type="date"], textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: grab;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -38,18 +55,24 @@
 
         <div class="form-group">
             <label>Gender:</label>
+
             <input type="radio" id="male" name="gender" value="Male">
             <label for="male" style="display:inline; font-weight:normal;">Male</label>
+
             <input type="radio" id="female" name="gender" value="Female">
             <label for="female" style="display:inline; font-weight:normal;">Female</label>
         </div>
 
         <div class="form-group">
             <label>Interests / Hobbies:</label>
+            <br>
+
             <input type="checkbox" id="coding" name="hobby" value="Coding">
             <label for="coding" style="display:inline; font-weight:normal;">Coding</label><br>
+
             <input type="checkbox" id="music" name="hobby" value="Music">
             <label for="music" style="display:inline; font-weight:normal;">Music</label><br>
+            
             <input type="checkbox" id="gaming" name="hobby" value="Gaming">
             <label for="gaming" style="display:inline; font-weight:normal;">Gaming</label>
         </div>
@@ -57,13 +80,12 @@
         <div class="form-group">
             <label for="country">Country of Residence:</label>
             <select id="country" name="country">
-                <option value="myanmar">Myanmar</option>
+                <option value="myanmar">Burma</option>
                 <option value="thailand">Thailand</option>
                 <option value="singapore">Singapore</option>
                 <option value="japan">Japan</option>
             </select>
         </div>
-
         <div class="form-group">
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="date_of_birth">
@@ -75,13 +97,11 @@
         </div>
 
         <div class="form-group">
-            <label for="bio">Short Biography:</label>
+            <label for="bio">Short Biography:</label><br>
             <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
         </div>
 
         <input type="submit" value="Submit Registration">
-
     </form>
-
 </body>
 </html>
