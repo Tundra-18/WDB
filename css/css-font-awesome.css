@@ -1,0 +1,50 @@
+body {
+    background-color: #f5f6fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.cloud-icon {
+    font-size: 50px;
+    color: #3498db;
+}
+.heart-icon {
+    font-size: 50px;
+    color: #e74c3c;
+}
+.car-icon {
+    font-size: 50px;
+    color: #2ecc71;
+}
+.file-icon {
+    font-size: 50px;
+    color: #f1c40f;
+}
+.bars-icon {
+    font-size: 50px;
+    color: #34495e;
+}
