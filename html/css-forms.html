@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Form</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/css/css-forms.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <ul class="nav">
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="right"><a href="#">About</a></li>
+  </ul>
+
+  <!-- FORM CONTENT -->
+  <div class="container">
+    <h2>Contact Us Form</h2>
+
+    <form action="#">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" placeholder="Your name..">
+
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="myanmar">Myanmar</option>
+        <option value="thailand">Thailand</option>
+        <option value="singapore">Singapore</option>
+      </select>
+
+      <label for="subject">Message</label>
+      <textarea id="subject" placeholder="Write something.."></textarea>
+
+      <input type="submit" value="Submit Data">
+
+    </form>
+  </div>
+</body>
+</html>

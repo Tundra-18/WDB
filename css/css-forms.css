@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+}
+/* NAVBAR */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #222;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav li a.active {
+  background: #ff4757;
+}
+
+.nav li a:hover {
+  background: #555;
+}
+
+.nav li.right {
+  margin-left: auto;
+}
+
+/* FORM CONTAINER */
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* FORM STYLES */
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* INPUT / SELECT / TEXTAREA */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* FOCUS EFFECT */
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #ff4757;
+  background-color: #fff5f5;
+  outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* SUBMIT BUTTON */
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+
+  padding: 14px;
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #038d58;
+}

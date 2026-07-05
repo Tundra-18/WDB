@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* NAVBAR */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  background: #222;
+}
+
+/* LINKS + BUTTON */
+.nav li a, .dropbtn {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ACTIVE STATE */
+.nav li a.active {
+  background: #ff4757;
+}
+
+/* HOVER EFFECT */
+.nav li a:hover,
+.dropdown:hover .dropbtn {
+  background: #555;
+}
+
+/* RIGHT ALIGN ITEM */
+.nav li.right {
+  margin-left: auto;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+/* DROPDOWN MENU */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: blue;
+  min-width: 120px;
+  top: 100%;
+  left: 0;
+}
+
+/* DROPDOWN LINKS */
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+/* DROPDOWN HOVER */
+.dropdown-content a:hover {
+  background: #ffa502;
+  color: white;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

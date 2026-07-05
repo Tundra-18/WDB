@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 2000px; /* Generates scroll length for testing */
+    background-color: #f4f4f4;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Helper Classes for Layout */
+.section-spacer {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.content-padding {
+    padding: 20px;
+}
+
+.scroll-spacer {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 1. Flexbox Navbar & Centering */
+.flex-nav {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    background-color: #333;
+    list-style-type: none;
+}
+
+.flex-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.flex-nav a:hover {
+    background-color: #111;
+}
+
+/* 2. Float Navbar + Active State + Right Align + Border Dividers */
+.float-nav {
+    list-style-type: none;
+    background-color: #222;
+    overflow: hidden; /* Prevents height collapse caused by floated children */
+}
+
+.float-nav li {
+    float: left; /* Aligns links horizontally */
+    border-right: 1px solid #bbb; /* Adds border dividers between links */
+}
+
+.float-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Active State for Current Page Link */
+.float-nav li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Right Aligns the Last Link */
+.float-nav li.right {
+    float: right;
+    border-left: 1px solid #bbb;
+    border-right: none;
+}
+
+.float-nav li a:hover:not(.active) {
+    background-color: #555;
+}
+/* 3. Fixed Navbar */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    list-style-type: none;
+    display: flex;
+    z-index: 1000;
+}
+
+.fixed-nav a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 4. Sticky Navbar */
+.sticky-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 48px; /* Sticks just beneath the 48px high Fixed Navbar */
+    background-color: #008CBA;
+    list-style-type: none;
+    display: flex;
+    z-index: 999;
+}
+
+.sticky-nav a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,86 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.box {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. list-style-type Examples */
+ul.circle {
+    list-style-type: circle;
+}
+
+ul.square {
+    list-style-type: square;
+}
+
+ol.roman {
+    list-style-type: upper-roman;
+}
+
+ol.alpha {
+    list-style-type: lower-alpha;
+}
+
+/* 2. list-style-image Example */
+ul.image-bullet {
+    list-style-image: url("/images/star.png");
+    list-style-type: square; /* Fallback */
+}
+
+/* 3. list-style-position Examples */
+ul.outside-pos {
+    list-style-position: outside;
+    background-color: #f1f1f1;
+}
+
+ul.inside-pos {
+    list-style-position: inside;
+    background-color: #e2e2e2;
+}
+
+/* 4. Remove Markers */
+ul.no-markers {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.no-markers li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+/* 5. Shorthand Property */
+ul.shorthand {
+    list-style: square inside url("/images/star.png");
+}
+
+/* 6. Styling Lists with Colors */
+ol.colored-list {
+    background: salmon;
+    padding: 20px;
+}
+
+ol.colored-list li {
+    background: mistyrose;
+    color: darkred;
+    padding: 10px;
+    margin-left: 20px;
+}

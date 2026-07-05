@@ -1,7 +1,19 @@
-.container {
+/* Dropdown ပုံစံချခြင်း */
+select {
   width: 100%;
-  max-width: 900px;
-  background-color: powderblue;
+  padding: 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Submit ခလုတ် ပုံစံချခြင်း */
+input[type=submit] {
+  background-color: #04AA6D; /* အစိမ်းရောင် ခလုတ် */
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer; /* မောက်စ်တင်လျှင် လက်ညှိုးပုံစံပြောင်းရန် */
 }
 
 
