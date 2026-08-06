@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Events</title>
+
+  <link rel="stylesheet" href="/css/keyboard-events.css">
+</head>
+<body>
+  <h2>Keyboard Events Demo</h2>
+
+  <!-- keydown Event -->
+  <div class="card">
+    <h3>1. keydown Event</h3>
+
+    <p>
+      Executes immediately when a key is pressed.
+      Useful for keyboard shortcuts.
+    </p>
+
+    <input
+      type="text"
+      id="keydownInput"
+      placeholder="Type something here...">
+
+    <div class="log-box" id="keydownLog">
+      Key: - | Code: -
+    </div>
+  </div>
+
+  <!-- keyup Event -->
+  <div class="card">
+    <h3>2. keyup Event</h3>
+
+    <p>
+      Executes when the pressed key is released.
+      Useful for live search and text validation.
+    </p>
+
+    <input
+      type="text"
+      id="keyupInput"
+      placeholder="Type here and release the key...">
+
+    <div class="status-container">
+      Status:
+      <span id="keyupStatus" class="status">
+        Idle
+      </span>
+    </div>
+
+    <div class="log-box" id="keyupLog">
+      Character Count: 0
+    </div>
+  </div>
+  <script src="/js/keyboard-events.js"></script>
+</body>
+</html>

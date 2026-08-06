@@ -4,7 +4,7 @@ for (let i = 1; i <= 5; i++) {
 }
 
 // Print "Hello" 5 times
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 6; i++) {
     console.log("Hello");
 }
 

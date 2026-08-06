@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection Demo</title>
+</head>
+<body>
+
+    <h1 id="title">JavaScript DOM Selection</h1>
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+    <div class="card">
+        <h3>Card 1</h3>
+    </div>
+
+    <div class="card">
+        <h3>Card 2</h3>
+    </div>
+
+    <div class="card">
+        <h3>Card 3</h3>
+    </div>
+
+    <script>
+        const title = document.getElementById("title");
+
+        const cards = document.getElementsByClassName("card");
+
+        const paragraphs = document.getElementsByTagName("p");
+
+        console.log(title);
+        console.log(cards);
+        console.log(paragraphs);
+
+        console.log(title.textContent);
+        console.log("Cards:");
+        
+        for (let i = 0; i < cards.length; i++) {
+            console.log(cards[i].textContent);
+        }
+
+        console.log("Paragraphs:");
+        for (let i = 0; i < paragraphs.length; i++) {
+            console.log(paragraphs[i].textContent);
+        }
+    </script>
+</body>
+</html>
+

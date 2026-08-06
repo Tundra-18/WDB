@@ -1,0 +1,24 @@
+// Parent Class 
+class Car {
+    constructor(brand) {
+        this.carname = brand;
+    }
+    present() {
+        return "I have a " + this.carname;
+    }
+}
+
+// Child Class 
+class Model extends Car {
+    constructor(brand, mod) {
+        super(brand); // Parent constructor 
+        this.model = mod;
+    }
+    show() {
+        return this.present() + ", it is a " + this.model;
+    }
+}
+
+const myCar = new Model("Ford", "Mustang");
+console.log(myCar.show()); //I have a Ford, it is a Mustang
+

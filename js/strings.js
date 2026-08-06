@@ -2,6 +2,6 @@ let single = 'Hello';
 let double = "World";
 
 let name = "John";
-let greeting = `Hello, ${name}!`; 
+let greeting = `Hey ${name} !`; 
 console.log(greeting); // "Hello, John!"
 

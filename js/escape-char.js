@@ -4,7 +4,7 @@ console.log(singleQuote);
 let doubleQuote = "He said, \"Hello!\"";
 console.log(doubleQuote);
 
-let filePath = "C:\\Program Files\\Nodejs";
+let filePath = "C:\\Users\\Zaw Ye Naung\\.gradle\\wrapper\\dists";
 console.log(filePath);
 
 let multiLine = "First Line\nSecond Line";

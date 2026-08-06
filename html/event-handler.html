@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Event Listeners Example</title>
+  <link rel="stylesheet" href="/css/event-handler.css">
+</head>
+
+<body>
+
+  <h2>DOM Event Listeners Examples</h2>
+
+  <!-- Example 1 - Click Event -->
+  <div class="card">
+    <h3>1. Click Event (Button & Class Toggle)</h3>
+
+    <div id="colorBox" class="box">Box</div>
+
+    <br>
+
+    <button id="toggleBtn">Toggle Color</button>
+  </div>
+
+
+  <!-- Example 2 - Input Event -->
+  <div class="card">
+    <h3>2. Input Event (Real-time Typing)</h3>
+
+    <input
+      type="text"
+      id="usernameInput"
+      placeholder="Enter your name...">
+
+    <p>
+      Output:
+      <strong id="greetingText">...</strong>
+    </p>
+  </div>
+
+
+  <!-- Example 3 - Form Submit Event -->
+  <div class="card">
+    <h3>3. Form Submit Event</h3>
+
+    <form id="loginForm">
+
+      <input
+        type="text"
+        id="emailInput"
+        placeholder="Enter your email">
+
+      <br>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
+  </div>
+
+  <script src="/js/event-handler.js"></script>
+
+</body>
+</html>
+
+

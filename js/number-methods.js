@@ -1,5 +1,6 @@
 let num = 123;
 let strResult = num.toString(); 
+console.log(strResult)
 console.log(typeof strResult); // "string"
 
 let price = 9.656;
@@ -11,4 +12,7 @@ let floatResult = parseFloat("10.33");
 
 console.log(intResult);   // 10
 console.log(floatResult); // 10.33
+console.log(typeof floatResult)
+
+
 
