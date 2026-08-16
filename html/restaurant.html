@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="/css/restaurant.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍽️ Delicious Restaurant</h1>
+
+        <p class="subtitle">
+            Choose your favorite food
+        </p>
+
+        <!-- MENU -->
+        <section class="menu-section">
+            <h2>Menu</h2>
+            <div id="menu" class="menu">
+                <!-- Menu items will be created by JavaScript -->
+            </div>
+        </section>
+
+        <!-- ORDER -->
+        <section class="order-section">
+            <h2>Your Order</h2>
+            <div id="orderList">
+                <p class="empty">
+                    Your order is empty.
+                </p>
+            </div>
+
+            <!-- ORDER SUMMARY -->
+            <div class="summary">
+                <p>
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </p>
+                <p>
+                    <span>Tax (5%):</span>
+                    <span id="tax">$0.00</span>
+                </p>
+                <hr>
+                <p class="total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </p>
+            </div>
+
+            <!-- BUTTONS -->
+            <button
+                id="clearButton"
+                class="clear-button">
+                Clear Order
+            </button>
+
+            <button
+                id="placeOrderButton"
+                class="place-button">
+                Place Order
+            </button>
+
+            <p id="message" class="message"></p>
+        </section>
+    </div>
+    <script src="/js/restaurant.js"></script>
+</body>
+</html>

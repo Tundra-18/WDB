@@ -92,7 +92,7 @@ const trackBox = document.getElementById("trackBox");
 trackBox.addEventListener("mousemove", function (event) {
 
     trackBox.textContent =
-        `Mouse Position → X: ${event.clientX}px | Y: ${event.clientY}px`;
+        `Mouse Position = X: ${event.clientX}px | Y: ${event.clientY}px`;
 
 });
 

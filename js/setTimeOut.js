@@ -5,5 +5,7 @@ function myFunction() {
 }
 
 
-
+setTimeout(function() {
+  console.log("It is 10 seconds!");
+}, 10000);
 
